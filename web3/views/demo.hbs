@@ -1,0 +1,32 @@
+We are living in {{ nam }}
+<br>
+{{ country }} is a beatyfull country
+<br>
+I am studying at {{ university }}
+<br>
+My GPA: {{ grade }}
+<br>
+<ul style="list-style-type: circle">
+    {{#each music }}
+    <li>{{ this }}</li>
+    {{/each }}
+</ul>
+<ol type="A">
+    {{#each movie}}
+    <li>{{this}}</li>
+    {{/each}}
+</ol>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Country</th>
+        <th></th>
+    </tr>
+    {{#each country }}
+    <tr>
+        <td>
+            {{ this }}
+        </td>
+    </tr>
+    {{/each}}
+</table>
